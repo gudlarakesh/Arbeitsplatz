@@ -12,7 +12,7 @@ body {
   overflow-y: hidden;
 
   .img1{
-    background-image: url("../images/five.jpg");
+    background-image: url("/images/five.jpg");
     opacity:0.8;
     width:50vw;
     height: 100vh;
@@ -21,7 +21,7 @@ body {
     overflow-x: hidden;
   }
   .img2{
-    background-image: url("../images/two.jpg");
+    background-image: url("/images/two.jpg");
     opacity:0.8;
     filter: grayscale(2);
     width:50vw;
