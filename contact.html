@@ -5,48 +5,69 @@ permalink: /contact/
 ---
 
 <div class="container">
-		<div id="contact">
-		<div class="col-md-6">
-			<div class="data">
-				<h2>Address</h2>
-				<p>Near Radision Hotel</p>
-				<p>Gachibowli Hyderabad</p>
-				<p>Pin: 500030</p>
-				<p> Mobile-0123456789</p>
-				<p>E-mail:ashyderabad@gmail.com</p>
+	<div id="contact">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="data">
+					<h2>Address</h2>
+					<p>Near Radision Hotel</p>
+					<p>Gachibowli Hyderabad</p>
+					<p>Pin: 500030</p>
+					<p> Mobile-0123456789</p>
+					<p>E-mail:ashyderabad@gmail.com</p>
 
-				<div class="social_icons">
-					<a href="#">
-						<i class="fa fa-facebook"></i>
-					</a>
-					<a href="#">
-						<i class="fa fa-github"></i>
-					</a>
-					<a href="#">
-						<i class="fa fa-twitter"></i>
-					</a>
-					<a href="#">
-						<i class="fa fa-linkedin"></i>
-					</a>
+					<div class="social_icons">
+						<a href="#">
+							<i class="fa fa-facebook"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-github"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-twitter"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-linkedin"></i>
+						</a>
+					</div>
 				</div>
+
+
+
+				<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+					<div class="row">
+						<input id="name" class="input" name="name" type="text" value="" size="50" placeholder="Your Name"/><br />
+					</div>
+					<div class="row">
+						<label for="email" font-size="10px"></label><br />
+						<input id="email" class="input" name="email" type="text" value="" size="50" placeholder="Mail ID @" /><br />
+					</div>
+					<div class="row">
+						<label for="message"></label><br />
+						<textarea id="message" class="input" name="message" rows="7" cols="50" placeholder="Text"></textarea><br />
+					</div>
+					<input id="submit_button" type="submit" value="Send email" />
+				</form>						
 			</div>
-		
 
-		
-			<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-				<div class="row">
-					<input id="name" class="input" name="name" type="text" value="" size="50" placeholder="Your Name"/><br />
+
+
+			<div class="colmd-6 map">
+				<script>
+				function initialize() {
+					var mapProp = {
+						center:new google.maps.LatLng(17.4432382,78.3555174),
+						zoom:13,
+						mapTypeId:google.maps.MapTypeId.ROADMAP
+					};
+					var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+				}
+				google.maps.event.addDomListener(window, 'load', initialize);
+				</script>
+				<div id="googleMap" style="width:500px;height:380px;">
 				</div>
-				<div class="row">
-					<label for="email" font-size="10px"></label><br />
-					<input id="email" class="input" name="email" type="text" value="" size="50" placeholder="Mail ID @" /><br />
-				</div>
-				<div class="row">
-					<label for="message"></label><br />
-					<textarea id="message" class="input" name="message" rows="7" cols="50" placeholder="Text"></textarea><br />
-				</div>
-				<input id="submit_button" type="submit" value="Send email" />
-			</form>						
+
+			</div>
 		</div>
 	</div>
 </div>

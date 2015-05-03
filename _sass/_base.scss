@@ -1,0 +1,54 @@
+.zero-padding {
+  padding: 0;
+}
+.navbar-header a h3{
+   transform: translateY(-60px);
+   margin-left: 60px;
+   font-family: "Merriweather",serif;
+  font-style: italic;
+
+}
+
+.navbar-header a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+#contact .map{
+  transform: translateY(50px);
+}
+
+#demo{
+  transform: translateX(150px);
+  display: inline-block;
+}
+#pricing{
+  footer{
+    text-align: center;
+    transform: translateY(80px);
+    
+  }
+ .buy{
+  margin-top: 50px;
+ }
+ .money{
+  transform: translateX(350px);
+ }
+ hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+}
+
+#signin{
+  transform: translateY(300px);
+  .password{
+    margin-left: 25px;
+  }
+}

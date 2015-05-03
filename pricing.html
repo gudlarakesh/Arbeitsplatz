@@ -1,0 +1,133 @@
+---
+layout: pricing
+title: as pricing
+permalink: /pricing/
+---
+
+
+<div id="pricing">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>We Provide you a free space for working single person<h3>
+          <h2>No.of persons</h2>
+
+          <form>
+            <select id="mySelect">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </form><p id="demo"></p>
+
+          <br>
+          <button onclick="myFunction()">Select</button>
+
+          <script>
+          function myFunction() {
+            var x = document.getElementById("mySelect");
+            var i = x.selectedIndex;
+            document.getElementById("demo").innerHTML = x.options[i].text;
+          }
+          </script>
+        </div>
+        <div class="col-md-6 buy">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">Room</button>
+           <button type="submit" form="form1" value="Submit" class="btn btn-primary money">Submit</button>
+          <div id="modal2" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <img class="img-responsive" src="../images/one.jpg">
+              </div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="row">
+            <div class="col-md-3">
+              <p>From</p>
+              <input id="name" class="input" name="name" type="text" value="" size="10" placeholder="dd/mm/yyyy"/>
+              <br>
+              <br>
+              <input id="name" class="input" name="name" type="text" value="" size="10" placeholder="HH:MM:SS"/>
+            </div>
+            <div class="col-md-3">
+              <p> To </p>
+              <input id="name" class="input" name="name" type="text" value="" size="10" placeholder="dd/mm/yyyy"/>
+              <br>
+              <br>
+              <input id="name" class="input" name="name" type="text" value="" size="10" placeholder="HH:MM:SS"/>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+
+      <br>
+      <hr>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>We Provide Meeting Room<h3>
+            <h2>No.of persons</h2>
+
+            <form>
+              <select id="mySelect">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </form><p id="demo"></p>
+
+            <br>
+            <button onclick="myFunction()">Select</button>
+
+            <script>
+            function myFunction() {
+              var x = document.getElementById("mySelect");
+              var i = x.selectedIndex;
+              document.getElementById("demo").innerHTML = x.options[i].text;
+            }
+            </script>
+          </div>
+          <div class="col-md-6 buy">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">Room</button>
+            
+            <button type="submit" form="form1" value="Submit" class="btn btn-primary money">Submit</button>
+
+
+            <div id="modal1" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                  <img class="img-responsive" src="../images/seven1.jpg">
+                </div>
+              </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+              <div class="col-md-3">
+                <p>From</p>
+                <input id="name" class="input" name="name" type="text" value="" size="10" placeholder="dd/mm/yyyy"/>
+                <br>
+                <br>
+                <input id="name" class="input" name="name" type="text" value="" size="10" placeholder="HH:MM:SS"/>
+              </div>
+              <div class="col-md-3">
+                <p> To </p>
+                <input id="name" class="input" name="name" type="text" value="" size="10" placeholder="dd/mm/yyyy"/>
+                <br>
+                <br>
+                <input id="name" class="input" name="name" type="text" value="" size="10" placeholder="HH:MM:SS"/>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <footer><img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppmcvdam.png" alt="Buy now with PayPal" /></footer>
+    </div>
+  </div>
+</div>
