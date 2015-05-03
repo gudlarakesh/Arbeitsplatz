@@ -1,7 +1,82 @@
+body {
+  overflow: hidden;
+}
+
 .navbar-header{
     height: 10vh;
 }
-#land {
-   background-image: url("/images/one.jpg");
+
+#land{
+  height: 100vh;
+  width: 100vw;
+  overflow-y: hidden;
+
+  .img1{
+    background-image: url("../images/five.jpg");
+    opacity:0.8;
+    width:50vw;
+    height: 100vh;
+    color: black;
+    background-size: cover;
+    overflow-x: hidden;
+  }
+  .img2{
+    background-image: url("../images/two.jpg");
+    opacity:0.8;
+    filter: grayscale(2);
+    width:50vw;
+    height: 100vh;
+    color: black ;
+    background-size: cover;
+    overflow-y: hidden;
+
+  }
+  .img1 .first h1{
+    text-align: center;
+    transform: translateY(250px); 
+    color: black;
+    font-family: "Merriweather",serif;
+    font-style: italic;
+  }
+  .img2 .second h1{
+    text-align: center;
+    transform: translateY(250px); 
+    color: black;
+    font-family: "Merriweather",serif;
+    font-style: italic;
+  }
+
+  .first, .second {
+    font-family: 'Muli', sans-serif;
+  }
 }
 
+.about h3{
+  font-family: "Merriweather",serif;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.about p{
+  font-family: "Merriweather",serif;
+  font-style: italic;
+  font-size: 25px;
+}
+
+#signin{
+  text-align: center;
+
+}
+
+.para1{
+font-family: "Merriweather",serif;
+font-style: italic;
+text-align: center;
+
+}
+
+.para1 h4{
+  text-decoration: underline;
+}
